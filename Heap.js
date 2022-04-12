@@ -4,7 +4,7 @@ class Heap {
     this.compFunc = comparator;
   }
   compare(i, j) {
-    return i < this.size() && j < this.size() && this.compFunc(this.heap[i], this.heap[j]);
+    return i < this.size() && j < this.size() ? this.compFunc(this.heap[i], this.heap[j]) : i < this.size();
   }
   peek() {
     return this.heap.length > 0 ? this.heap[0] : null;
@@ -49,9 +49,13 @@ class Heap {
     this._swap(l - 1, index);
     const removedElement = this.heap.pop();
     // shiftDown
-    while (this.compare(this._leftChild(index), index) || this.compare(this._rightChild(index), index)) {
-      const [leftChildInd , rightChildInd ] = [this._leftChild(index), this._rightChild(index)];
-      const swapChildInd = this.compare(leftChildInd, rightChildInd) ? leftChildInd : rightChildInd;
+    while (this.compare(this._leftChild(index), index)
+      || this.compare(this._rightChild(index), index)) {
+      const [leftChildInd, rightChildInd] = [
+        this._leftChild(index), this._rightChild(index)
+      ];
+      const swapChildInd = this.compare(leftChildInd, rightChildInd)
+        ? leftChildInd : rightChildInd;
       this._swap(swapChildInd, index);
       index = swapChildInd;
     }
@@ -59,19 +63,21 @@ class Heap {
   }
 }
 
-let input1 = [3,1,2,5,6]
-const maxHeap = new Heap((a,b) => a > b);
+let input1 = [3, 1, 2, 5, 6]
+const maxHeap = new Heap((a, b) => a > b);
 input1.forEach(p => maxHeap.add(p))
-const minHeap = new Heap((a,b) => a < b);
+const minHeap = new Heap((a, b) => a < b);
 input1.forEach(p => minHeap.add(p))
 function popAndPrintHeap(heap) {
   var out = [];
-  while(heap.size()) {
+  while (heap.size()) {
     out.push(heap.pop());
   }
   console.log(out);
 }
-console.log('maxHeap: '+ maxHeap.heap);
+console.log('maxHeap: ' + maxHeap.heap);
+// Heap Sort Descending
 popAndPrintHeap(maxHeap);
-console.log('minHeap: '+ minHeap.heap);
+// Heap Sort Ascending
+console.log('minHeap: ' + minHeap.heap);
 popAndPrintHeap(minHeap);
