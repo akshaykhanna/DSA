@@ -3,4 +3,4 @@ Implementing commonly use advance DSA, helpfull for solving MAANG/tech interview
 
 - Heap
 - Trie
-- Union Find (aka Disjoint Set):
+- Union Find (aka Disjoint Set)
