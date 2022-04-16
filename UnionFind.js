@@ -35,11 +35,11 @@ class UnionFind {
     const [rootX, rootY] = [this.findPathCompression(x), this.findPathCompression(y)];
     if (rootX !== rootY) {
       if (this.rank[rootX] > this.rank[rootY]) {
-        this.root[rootY] = this.root[rootX];
+        this.root[rootY] = rootX;
       } else if (this.rank[rootX] < this.rank[rootY]) {
-        this.root[rootX] = this.root[rootY];
+        this.root[rootX] = rootY;
       } else {
-        this.root[rootY] = this.root[rootX];
+        this.root[rootY] = rootX;
         this.rank[rootX] += 1;
       }
     }
