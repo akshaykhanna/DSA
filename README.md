@@ -1,6 +1,6 @@
 # Data Structures and Algorithms (DSA)
-Implementing commonly use advance DSA using JS, helpfull for solving MAANG/tech interview problems.
+Implementing commonly use DSA using JS, helpfull in solving MAANG & top tech interview problems.
 
-- Heap
-- Trie
-- Union Find (aka Disjoint Set)
+- [Heap](https://github.com/akshaykhanna/DSA/blob/main/Heap.js)
+- [Trie](https://github.com/akshaykhanna/DSA/blob/main/Trie.js)
+- [Union Find](https://github.com/akshaykhanna/DSA/blob/main/UnionFind.js) (aka Disjoint Set)
