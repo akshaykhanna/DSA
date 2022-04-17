@@ -125,7 +125,6 @@ var minCostConnectPoints = function(points) {
     }
     while(minHeap.size() > 0 && count > 0) {
         const [v1, v2, cost] = minHeap.pop();
-        // console.log(v1, v2, cost)
         if(!uf.connected(v1,v2)) {
             uf.unionByRank(v1,v2);
             out += cost; 
