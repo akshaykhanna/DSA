@@ -12,7 +12,7 @@ Implementing commonly use DSA using JS, helpfull in solving MAANG & top tech int
   - [Kruskal’s algorithm](https://github.com/akshaykhanna/DSA/blob/main/KruskalAlgo.js)
   - [Prim's Algorithm](https://github.com/akshaykhanna/DSA/blob/main/PrimAlgo.js)
 - ### Single Source Shortest path
-  - Dijkstra’s algorithm: Single source shortest path in a graph with non-negative weights.
+  - [Dijkstra’s algorithm](https://github.com/akshaykhanna/DSA/blob/main/DijkstraAlgo.js): Single source shortest path in a graph with non-negative weights ([LC Problem](https://leetcode.com/problems/network-delay-time/)).
   - Bellman-Ford algorithm: Single source shortest path in a graph with with any weights, including negative weights.
   
 
