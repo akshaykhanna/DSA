@@ -9,7 +9,8 @@ Implementing commonly use DSA using JS, helpfull in solving MAANG & top tech int
   A **spanning tree** is a connected subgraph in an undirected graph where all vertices are connected with the minimum number of edge.
   A **minimum spanning tree** is a spanning tree with the minimum possible total edge weight in a “weighted undirected graph”.
   #### LC Problem: [Min Cost to Connect All Points](https://leetcode.com/problems/min-cost-to-connect-all-points/)
-  - Solving using [Kruskal’s algorithm](https://github.com/akshaykhanna/DSA/blob/main/KruskalAlgo.js)
+  - [Kruskal’s algorithm](https://github.com/akshaykhanna/DSA/blob/main/KruskalAlgo.js)
+  - [Prim's Algorithm](https://github.com/akshaykhanna/DSA/blob/main/PrimAlgo.js)
   
 
 
