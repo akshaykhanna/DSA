@@ -12,6 +12,9 @@ class Heap {
   size() {
     return this.heap.length;
   }
+  isEmpty() {
+    return this.heap.length === 0;
+  }
   _swap(i, j) {
     if (i < this.size() && j < this.size()) {
       const temp = this.heap[i];
