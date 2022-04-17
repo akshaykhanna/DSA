@@ -11,7 +11,7 @@ Implementing commonly use DSA using JS, helpfull in solving MAANG & top tech int
   #### LC Problem: [Min Cost to Connect All Points](https://leetcode.com/problems/min-cost-to-connect-all-points/)
   - [Kruskal’s algorithm](https://github.com/akshaykhanna/DSA/blob/main/KruskalAlgo.js)
   - [Prim's Algorithm](https://github.com/akshaykhanna/DSA/blob/main/PrimAlgo.js)
-- ### Single Sourece Shortest path Algo
+- ### Single Source Shortest path
   - Dijkstra’s algorithm: Single source shortest path in a graph with non-negative weights.
   - Bellman-Ford algorithm: Single source shortest path in a graph with with any weights, including negative weights.
   
