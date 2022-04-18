@@ -19,7 +19,7 @@ Arsenal of commonly use DSA in JS, helpfull in solving MAANG & top tech intervie
   - [Dijkstra’s algorithm](https://github.com/akshaykhanna/DSA/blob/main/DijkstraAlgo.js): Single source shortest path in a graph with non-negative weights ([LC Problem](https://leetcode.com/problems/network-delay-time/)).
   - Bellman-Ford algorithm: Single source shortest path in a graph with with any weights, including negative weights
 - ### Topological Sort: Kahn's Algo
-  - [LC Problem](https://leetcode.com/problems/course-schedule-ii/)
+  - [LC Problem: Course Schedule](https://leetcode.com/problems/course-schedule-ii/)
   - Solution using [topological Sort](https://github.com/akshaykhanna/DSA/blob/main/TopologicalSort.js)
   
 
