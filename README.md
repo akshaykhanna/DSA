@@ -1,5 +1,5 @@
 # Data Structures and Algorithms (DSA)
-Arsenal of commonly use Advance DSA using JS, helpfull in solving MAANG & top tech interview problems.
+Arsenal of commonly use DSA in JS, helpfull in solving MAANG & top tech interview problems.
 
 - ### [Heap](https://github.com/akshaykhanna/DSA/blob/main/Heap.js)
 - ### [Trie](https://github.com/akshaykhanna/DSA/blob/main/Trie.js)
@@ -17,7 +17,8 @@ Arsenal of commonly use Advance DSA using JS, helpfull in solving MAANG & top te
   - [Prim's Algorithm](https://github.com/akshaykhanna/DSA/blob/main/PrimAlgo.js)
 - ### Single Source Shortest path
   - [Dijkstra’s algorithm](https://github.com/akshaykhanna/DSA/blob/main/DijkstraAlgo.js): Single source shortest path in a graph with non-negative weights ([LC Problem](https://leetcode.com/problems/network-delay-time/)).
-  - Bellman-Ford algorithm: Single source shortest path in a graph with with any weights, including negative weights.
+  - Bellman-Ford algorithm: Single source shortest path in a graph with with any weights, including negative weights
+- ### Topological Sort: Kahn's Algo
   
 
 
