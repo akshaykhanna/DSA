@@ -21,6 +21,9 @@ Arsenal of commonly use DSA in JS, helpfull in solving MAANG & top tech intervie
 - ### Topological Sort: Kahn's Algo
   - [LC Problem: Course Schedule](https://leetcode.com/problems/course-schedule-ii/)
   - Solution using [topological Sort](https://github.com/akshaykhanna/DSA/blob/main/TopologicalSort.js)
-  
+- ### Divde and Conquor (D&C)
+  - **Divide**: Divide the problem into a set of subproblems
+  - **Conquer**: Solve each subproblem recursively.
+  - **Combine**: Combine the results of each subproblem.
 
 
