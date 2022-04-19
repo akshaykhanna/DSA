@@ -26,5 +26,25 @@ Arsenal of commonly use DSA in JS, helpfull in solving MAANG & top tech intervie
   - **Conquer**: Solve each subproblem recursively.
   - **Combine**: Combine the results of each subproblem.
   - [Merge sort](https://github.com/akshaykhanna/DSA/blob/main/MergeSort.js)
+- ### Backtracking
+  - Algo for finding all (or some) solutions to some computational problems which incrementally builds candidates to the solution and abandons a candidate ("backtracks") as soon as it determines that the candidate cannot lead to a valid solution.
+  - Template: 
+  ```
+    def backtrack(candidate):
+        if find_solution(candidate):
+            output(candidate)
+            return
+
+        # iterate all possible candidates.
+        for next_candidate in list_of_candidates:
+            if is_valid(next_candidate):
+                # try this partial candidate solution
+                place(next_candidate)
+                # given the candidate, explore further.
+                backtrack(next_candidate)
+                # backtrack
+                remove(next_candidate)
+   ```
+  
 
 
