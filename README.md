@@ -25,5 +25,6 @@ Arsenal of commonly use DSA in JS, helpfull in solving MAANG & top tech intervie
   - **Divide**: Divide the problem into a set of subproblems
   - **Conquer**: Solve each subproblem recursively.
   - **Combine**: Combine the results of each subproblem.
+  - [Merge sort](https://github.com/akshaykhanna/DSA/blob/main/MergeSort.js)
 
 
