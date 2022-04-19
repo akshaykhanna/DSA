@@ -45,6 +45,8 @@ Arsenal of commonly use DSA in JS, helpfull in solving MAANG & top tech intervie
                 # backtrack
                 remove(next_candidate)
    ```
-  
+  - N-Queens: no. of distinct ways to place n queens on n*n board
+    - [Problem](https://leetcode.com/problems/n-queens-ii/)
+    - [Solution](https://github.com/akshaykhanna/DSA/blob/main/Backtracking_N-Queens.js) 
 
 
