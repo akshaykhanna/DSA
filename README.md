@@ -48,5 +48,8 @@ Arsenal of commonly use DSA in JS, helpfull in solving MAANG & top tech intervie
   - N-Queens: no. of distinct ways to place n queens on n*n board
     - [Problem](https://leetcode.com/problems/n-queens-ii/)
     - [Solution](https://github.com/akshaykhanna/DSA/blob/main/Backtracking_N-Queens.js) 
+- ### Dynamic Programming (DP)
+  - Used for problem which can be further broken down into "overlapping subproblems"
+  - The problem has an "optimal substructure" means an optimal solution can be formed from the overlapping subproblems of the original problem.
 
 
