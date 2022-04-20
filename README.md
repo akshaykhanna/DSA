@@ -51,5 +51,25 @@ Arsenal of commonly use DSA in JS, helpfull in solving MAANG & top tech intervie
 - ### Dynamic Programming (DP)
   - Used for problem which can be further broken down into "overlapping subproblems"
   - The problem has an "optimal substructure" means an optimal solution can be formed from the overlapping subproblems of the original problem.
+  - 2 ways to implement DP are:-
+    - Bottom-up, also known as tabulation (Uses iteration)
+    ```
+    F = array of length (n + 1)
+    F[0] = 0
+    F[1] = 1
+    for i from 2 to n:
+      F[i] = F[i - 1] + F[i - 2]
+    ```
+    - Top-down, also known as memoization (Uses recursion)
+    ```
+    memo = hashmap
+    Function F(integer i):
+      if i is 0 or 1: 
+          return i
+      if i doesn't exist in memo:
+          memo[i] = F(i - 1) + F(i - 2)
+      return memo[i]
+    ```
+  - Memoizing a result means to store the result of a function call, usually in a hashmap or an array, so that when the same function call is made again, we can simply return the memoized result instead of recalculating the result.
 
 
