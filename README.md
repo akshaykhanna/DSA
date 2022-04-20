@@ -70,6 +70,9 @@ Arsenal of commonly use DSA in JS, helpfull in solving MAANG & top tech intervie
           memo[i] = F(i - 1) + F(i - 2)
       return memo[i]
     ```
-  - Memoizing a result means to store the result of a function call, usually in a hashmap or an array, so that when the same function call is made again, we can simply return the memoized result instead of recalculating the result.
+  - **Memoizing** a result means to store the result of a function call, usually in a hashmap or an array, so that when the same function call is made again, we can simply return the memoized result instead of recalculating the result.
+  - #### When to use DP
+    -  Problem will ask for the optimum value (maximum or minimum) of something
+    -  Future "decisions" depend on earlier decisions
 
 
