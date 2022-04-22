@@ -1,6 +1,8 @@
 # Data Structures and Algorithms (DSA)
 Arsenal of commonly use DSA in JS, helpfull in solving MAANG & top tech interview problems.
 
+- ### Array
+  - **InPlace**: Whenever trying to solve an array problem in-place, always consider the possibility of iterating backwards instead of forwards through the array. It can make it a lot easier.
 - ### [Heap](https://github.com/akshaykhanna/DSA/blob/main/Heap.js)
 - ### [Trie](https://github.com/akshaykhanna/DSA/blob/main/Trie.js)
 - ### [Union Find](https://github.com/akshaykhanna/DSA/blob/main/UnionFind.js) (aka Disjoint Set)
