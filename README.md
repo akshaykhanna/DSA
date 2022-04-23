@@ -9,6 +9,7 @@ Arsenal of commonly use DSA in JS, helpfull in solving MAANG & top tech intervie
   - [Level Order Traversal](https://github.com/akshaykhanna/DSA/blob/main/LevelOrderTraversalTree.js)
   - Preorder (Top Down)
   - Postorder (Bottom's Up)
+  - Construct a [tree using inorder & preoder ](https://github.com/akshaykhanna/DSA/blob/main/Contruct-Tree-Preorder-Inorder.js)as input for it.
 - ### [Union Find](https://github.com/akshaykhanna/DSA/blob/main/UnionFind.js) (aka Disjoint Set)
   -  Check wether nodes are connected or not
   -  Find(index): Returns root of node index
