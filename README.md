@@ -5,6 +5,8 @@ Arsenal of commonly use DSA in JS, helpfull in solving MAANG & top tech intervie
   - **InPlace**: Whenever trying to solve an array problem in-place, always consider the possibility of iterating backwards instead of forwards through the array. It can make it a lot easier.
 - ### [Heap](https://github.com/akshaykhanna/DSA/blob/main/Heap.js)
 - ### [Trie](https://github.com/akshaykhanna/DSA/blob/main/Trie.js)
+- ### Tree
+  - [Level Order Traversal](https://github.com/akshaykhanna/DSA/blob/main/LevelOrderTraversalTree.js)
 - ### [Union Find](https://github.com/akshaykhanna/DSA/blob/main/UnionFind.js) (aka Disjoint Set)
   -  Check wether nodes are connected or not
   -  Find(index): Returns root of node index
