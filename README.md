@@ -11,6 +11,7 @@ Arsenal of commonly use DSA in JS, helpfull in solving MAANG & top tech intervie
   - Postorder (Bottom's Up)
   - Construct a [tree using inorder & preoder ](https://github.com/akshaykhanna/DSA/blob/main/Contruct-Tree-Preorder-Inorder.js)as input for it.
   - The [**lowest common ancestor (LCA)**](https://github.com/akshaykhanna/DSA/blob/main/LCA.js) is defined between two nodes p and q as the lowest node in T that has both p and q as descendants (where we allow a node to be a descendant of itself).
+  - [Serailize Deserailize tree](https://github.com/akshaykhanna/DSA/blob/main/Seralize-Deseralize-Tree.js)
 - ### [Union Find](https://github.com/akshaykhanna/DSA/blob/main/UnionFind.js) (aka Disjoint Set)
   -  Check wether nodes are connected or not
   -  Find(index): Returns root of node index
