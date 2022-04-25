@@ -86,5 +86,9 @@ Arsenal of commonly use DSA in JS, helpfull in solving MAANG & top tech intervie
   - #### When to use DP
     -  Problem will ask for the optimum value (maximum or minimum) of something
     -  Future "decisions" depend on earlier decisions
+  - Buy & Sell Stock
+    - Single day to buy one stock and choosing a different day in the future to sell that stock. ([Problem](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) : [Solution](https://github.com/akshaykhanna/DSA/blob/main/BuyAndSellStockWithOneTransaction.js))
+    - You can buy & sell any number of times however cannot buy & sell on the same day. ([Problem](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/) : [Solution](https://github.com/akshaykhanna/DSA/blob/main/BuyNSellStockWithAnyNumberTransactions.js))
+    - With max 2 transactions. ([Problem](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/): [Solution](https://github.com/akshaykhanna/DSA/blob/main/BuyNSellStockWithMax2Trans.js))
 
 
