@@ -40,6 +40,7 @@ Arsenal of commonly use DSA in JS, helpfull in solving MAANG & top tech intervie
   - [Merge sort](https://github.com/akshaykhanna/DSA/blob/main/MergeSort.js)
 - ### Backtracking
   - Algo for finding all (or some) solutions to some computational problems which incrementally builds candidates to the solution and abandons a candidate ("backtracks") as soon as it determines that the candidate cannot lead to a valid solution.
+  - **Pruning**: For backtracking to be efficient, we must **prune** dead or redundent branches of the search space whenever possible. 
   - Template: 
   ```
     def backtrack(candidate):
