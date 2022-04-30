@@ -30,6 +30,7 @@ Arsenal of commonly use DSA in JS, helpfull in solving MAANG & top tech intervie
 - ### Topological Sort: Kahn's Algo
   - [LC Problem: Course Schedule](https://leetcode.com/problems/course-schedule-ii/)
   - Solution using [topological Sort](https://github.com/akshaykhanna/DSA/blob/main/TopologicalSort.js)
+  - [LC Problem: Alien Dictionary](https://leetcode.com/problems/alien-dictionary/)
 - ### Bipartite Graph
   -   A graph is **bipartite** if the nodes can be partitioned into two independent sets A and B such that every edge in the graph connects a node in set A and a node in set B
   -   [Problem](https://leetcode.com/problems/is-graph-bipartite/) : [Solution](https://github.com/akshaykhanna/DSA/blob/main/Is-Bipartite-Graph.js)
