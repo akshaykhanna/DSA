@@ -3,6 +3,8 @@ Arsenal of commonly use DSA in JS, helpfull in solving MAANG & top tech intervie
 
 - ### Array
   - **InPlace**: Whenever trying to solve an array problem in-place, always consider the possibility of iterating backwards instead of forwards through the array. It can make it a lot easier.
+- ### 2-D Array
+  - Two coordinates are on the same diagonal if and only if r1 - c1 == r2 - c2
 - ### [Heap](https://github.com/akshaykhanna/DSA/blob/main/Heap.js)
 - ### [Trie](https://github.com/akshaykhanna/DSA/blob/main/Trie.js)
 - ### Tree
