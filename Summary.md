@@ -109,6 +109,19 @@
            - rank[root1] === rank[root2] -> this.roots[root2] = root1; this.rank[root1] += 1;
    - connected: check two nodes are connected or not (have same root or not)
      -  find(root1) === find(root2)
+- ## Min spanning tree (min distance to connect all nodes)
+  - Kruskal Algo
+    - Edges array - Store distance of each node with other nodes: [ [point1, point2, distance12], [point1, point3, distance13] ..... ]
+    - MinHeap - which store above edges, with min distance edge on top (Compare func: edge12.distance <= edge13.distance)
+    - Intialise: uf = UninonFind(noOfPoints)
+    - Intianlise: count & minDistanceToConnectAll to 0
+    - Loop till : minHeap.length > 0 && count < no of points
+        -  edge = minHeap.pop()
+        -  if(!uf.connected(edge.point1, edge.point2))
+           - uf.union(edge.point1, edge.point2)
+           - minDistanceToConnectAll += edge.distance
+           - count ++
+    - return minDistanceToConnectAll
      
  
        
