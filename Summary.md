@@ -48,6 +48,23 @@
         - Return false;
     - Return this.keys[ch].startsWith(word.substr(1)
 
+## Tree
+- ### Level order traversal
+  - Queue
+  - NodesForAllLevels = []
+  - Outer loop
+    - nodesInCurrLevel = queue.length
+    - nodesOFALevel = []
+    - Inner Loop: nodesInCurrLevel > 0
+      - node = dequeue (queue.shift)
+      - nodesInCurrLevel.add(node)
+      - nodesInCurrLevel --;
+      - queue.push(node->[left + right Child])
+    - NodesForAllLevels.push(nodesOFALevel)
+   - return NodesForAllLevels;
+-  ### Construct tree using inorder + preorder
+   - 
+
 
 
 
