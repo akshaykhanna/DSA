@@ -137,6 +137,17 @@
            - minHeap.Push(adjVerteices.vetex-1)
       - Return Max(distancesOfVetexFromSource) !== Infinity ?  Max(distancesOfVetexFromSource) : -1
    - Bellman-ford algo: (Works with -ve weights too)
+ - ## Toplogical Sort: CourseShedule / Ordering before to after (Directed graph)
+   - Intialise: adjList,  inDegree of vertices & orderOutput = [], n: no vertices
+   - queue = [...getZeroDegreVertex(inDegree)...]
+   - Loop: queue.len > 0
+     - const currVertex = queue.shift(); 
+     - orderOutput.push(currVertex)
+     - Loop: adjVetices = adjList[currVertex]
+       - inDegree[adjVertex] --
+       - inDegree[adjVertex] === 0
+         - queue.push(adjVertex)
+   - return orderOutput.len === n ? orderOutput : []
      
  
        
