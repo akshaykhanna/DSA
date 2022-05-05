@@ -148,6 +148,21 @@
        - inDegree[adjVertex] === 0
          - queue.push(adjVertex)
    - return orderOutput.len === n ? orderOutput : []
+ - ## Bipartite Graph
+   -  Nodes can be partitioned into two independent sets A (Red) and B (Blue) such that every edge in the graph connects a node in set A to set B
+   -  Intial: Total no of vertex: n, stack, colorMap
+   -  Loop: all vertices 
+      - If not colored(vertex)
+        -  colorMap[vertex] = 0;
+        -  stack.push(vetex)
+        -  Loop: stack.length
+           - currVertex = stack.pop()
+             - Loop: adjList[vetex]
+                - if adjVertex not in ColorMap
+                  - color[adjVertex] =  !color[currVertex]   
+                - else if   color[adjVertex] === color[currVertex]  
+                  -  return false
+    - Return true   
      
  
        
