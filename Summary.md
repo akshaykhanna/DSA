@@ -82,6 +82,35 @@
       - mid+left+right >= 2 -> lca = root; return ;
     - helper(root,p,q)
     - return lca
+ 
+ ## Graph
+ - ### UnionFind
+   - roots = [].fill(index)
+   - rank = [].fill(1)
+   - find -> return root of node
+     - find(ind)
+       - while(ind !== root[ind])
+         -  ind = root[ind];
+       - return ind 
+     -  findWithPathCompression(ind)
+       - if(ind === root[ind])
+         -  return ind
+       - return root[ind] =  findWithPathCompression(root[ind])
+   - union -> join 2 nodes
+     - union(n1,n2)
+       - [root1,root2] = [find(n1), find(n2)]
+       - root1 !== root2
+         - this.roots[root2] = root1;
+     - unionByRank(n1,n2)
+       - [root1,root2] = [find(n1), find(n2)]
+       - root1 !== root2
+           - rank[root1] > rank[root2] -> this.roots[root2] = root1;
+           - rank[root1] < rank[root2] -> this.roots[root1] = root2;
+           - rank[root1] === rank[root2] -> this.roots[root2] = root1; this.rank[root1] += 1;
+   - connected: check two nodes are connected or not (have same root or not)
+     -  find(root1) === find(root2)
+     
+ 
        
 
 
