@@ -72,16 +72,16 @@
      - roor.right = recursive(rootInd+1, inorderRight)
    - return recursive()
 -  ### LCA
-    - Lowest node of p & q of which both are descendants (can also be 1 of them)
-    - lca = null
-    - func helper(root, p, q)
+   - Lowest node of p & q of which both are descendants (can also be 1 of them)
+   - lca = null
+   - func helper(root, p, q)
       - !root -> false
       - left = helper(root.left, p,q) ? 1 : 0;
       - right = helper(root.right, p,q) ? 1 : 0;
       - mid = (root === p || root ===q) ? 1 : 0;
       - mid+left+right >= 2 -> lca = root; return ;
-  - helper(root,p,q)
-  - return lca
+    - helper(root,p,q)
+    - return lca
        
 
 
