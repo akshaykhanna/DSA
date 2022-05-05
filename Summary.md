@@ -122,10 +122,21 @@
            - minDistanceToConnectAll += edge.distance
            - count ++
     - return minDistanceToConnectAll
-- ## Single source shortest path to another node 
-    - Dijkstra’s algorithm (Non -ve weights)
-        - 
-    - Bellman-ford algo: (Works with -ve weights too)
+ - ## Single source shortest path to another node
+   - Dijkstra’s algorithm (Non -ve weights)
+     - Input
+       - Source Vertex: k
+       - Total no of Vertex : n
+       - adjList { n1: [[n2, time/weight], [n1, time/weight]]
+     - Inialise: distancesOfVetexFromSource = Array(n).fill(Infinity); minHeap(distancesOfVetexFromSource[n1] < distancesOfVetexFromSource[n2]); minHeap.push(k-1)
+     - Loop: minHeap.len > 0
+       - currVer = minHeap.pop()
+       - Loop: adjVertices[currVer]
+         - distancesOfVetexFromSource[currVer] + adjVertex.time   < distancesOfVetexFromSource[adjVertex.vertex]
+           - distancesOfVetexFromSource[adjVerteices.vetex] = adjVertex.distance ;
+           - minHeap.Push(adjVerteices.vetex-1)
+      - Return Max(distancesOfVetexFromSource) !== Infinity ?  Max(distancesOfVetexFromSource) : -1
+   - Bellman-ford algo: (Works with -ve weights too)
      
  
        
