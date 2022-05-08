@@ -14,28 +14,29 @@ Arsenal of commonly use DSA in JS, helpfull in solving MAANG & top tech intervie
   - Construct a [tree using inorder & preoder ](https://github.com/akshaykhanna/DSA/blob/main/Contruct-Tree-Preorder-Inorder.js)as input for it.
   - The [**lowest common ancestor (LCA)**](https://github.com/akshaykhanna/DSA/blob/main/LCA.js) is defined between two nodes p and q as the lowest node in T that has both p and q as descendants (where we allow a node to be a descendant of itself).
   - [Serailize Deserailize tree](https://github.com/akshaykhanna/DSA/blob/main/Seralize-Deseralize-Tree.js)
-- ### [Union Find](https://github.com/akshaykhanna/DSA/blob/main/UnionFind.js) (aka Disjoint Set)
-  -  Check wether nodes are connected or not
-  -  Find(index): Returns root of node index
-  -  Union(ind1, ind2): Joins node at ind1 & ind2
-  -  Connected(x,y): Returns true if nodes are connected (have same root)   
-- ### Construct Minimum Spanning Tree (connect all nodes)
-  #### Minimum spanning tree
-  A **spanning tree** is a connected subgraph in an undirected graph where all vertices are connected with the minimum number of edge.
-  A **minimum spanning tree** is a spanning tree with the minimum possible total edge weight in a “weighted undirected graph”.
-  #### LC Problem: [Min Cost to Connect All Points](https://leetcode.com/problems/min-cost-to-connect-all-points/)
-  - [Kruskal’s algorithm](https://github.com/akshaykhanna/DSA/blob/main/KruskalAlgo.js)
-  - [Prim's Algorithm](https://github.com/akshaykhanna/DSA/blob/main/PrimAlgo.js)
-- ### Single Source Shortest path
-  - [Dijkstra’s algorithm](https://github.com/akshaykhanna/DSA/blob/main/DijkstraAlgo.js): Single source shortest path in a graph with non-negative weights ([LC Problem](https://leetcode.com/problems/network-delay-time/)).
-  - Bellman-Ford algorithm: Single source shortest path in a graph with with any weights, including negative weights
-- ### Topological Sort: Kahn's Algo
-  - [LC Problem: Course Schedule](https://leetcode.com/problems/course-schedule-ii/)
-  - Solution using [topological Sort](https://github.com/akshaykhanna/DSA/blob/main/TopologicalSort.js)
-  - [LC Problem: Alien Dictionary](https://leetcode.com/problems/alien-dictionary/)
-- ### Bipartite Graph
-  -   A graph is **bipartite** if the nodes can be partitioned into two independent sets A and B such that every edge in the graph connects a node in set A and a node in set B
-  -   [Problem](https://leetcode.com/problems/is-graph-bipartite/) : [Solution](https://github.com/akshaykhanna/DSA/blob/main/Is-Bipartite-Graph.js)
+- ### Graph
+  - #### [Union Find](https://github.com/akshaykhanna/DSA/blob/main/UnionFind.js) (aka Disjoint Set)
+    -  Check wether nodes are connected or not
+    -  Find(index): Returns root of node index
+    -  Union(ind1, ind2): Joins node at ind1 & ind2
+    -  Connected(x,y): Returns true if nodes are connected (have same root)   
+  - #### Construct Minimum Spanning Tree (connect all nodes)
+    ##### Minimum spanning tree
+    A **spanning tree** is a connected subgraph in an undirected graph where all vertices are connected with the minimum number of edge.
+    A **minimum spanning tree** is a spanning tree with the minimum possible total edge weight in a “weighted undirected graph”.
+    ##### LC Problem: [Min Cost to Connect All Points](https://leetcode.com/problems/min-cost-to-connect-all-points/)
+    - [Kruskal’s algorithm](https://github.com/akshaykhanna/DSA/blob/main/KruskalAlgo.js)
+    - [Prim's Algorithm](https://github.com/akshaykhanna/DSA/blob/main/PrimAlgo.js)
+  - #### Single Source Shortest path
+    - [Dijkstra’s algorithm](https://github.com/akshaykhanna/DSA/blob/main/DijkstraAlgo.js): Single source shortest path in a graph with non-negative weights ([LC Problem](https://leetcode.com/problems/network-delay-time/)).
+    - Bellman-Ford algorithm: Single source shortest path in a graph with with any weights, including negative weights
+  - #### Topological Sort: Kahn's Algo
+    - [LC Problem: Course Schedule](https://leetcode.com/problems/course-schedule-ii/)
+    - Solution using [topological Sort](https://github.com/akshaykhanna/DSA/blob/main/TopologicalSort.js)
+    - [LC Problem: Alien Dictionary](https://leetcode.com/problems/alien-dictionary/)
+  - #### Bipartite Graph
+    -   A graph is **bipartite** if the nodes can be partitioned into two independent sets A and B such that every edge in the graph connects a node in set A and a node in set B
+    -   [Problem](https://leetcode.com/problems/is-graph-bipartite/) : [Solution](https://github.com/akshaykhanna/DSA/blob/main/Is-Bipartite-Graph.js)
 - ### Divde and Conquor (D&C)
   - **Divide**: Divide the problem into a set of subproblems
   - **Conquer**: Solve each subproblem recursively.
