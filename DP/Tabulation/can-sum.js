@@ -11,6 +11,7 @@ function canSum(targetSum, numbers) {
       }
     }
   }
+  // returning output which is last index of table
   return table[targetSum];
 }
 
