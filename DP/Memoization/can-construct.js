@@ -17,7 +17,7 @@ console.log(canConstruct("abcdef", ["ab", "abc", "cd", "def", "abcd"])); // true
 console.log(
   canConstruct("skateboard", ["bo", "rd", "ate", "t", "ska", "sk", "boar"])
 ); // false
-console.log(canConstruct("", ["cat", "dog", "mouse"])); // false
+console.log(canConstruct("", ["cat", "dog", "mouse"])); // true
 // after DP it works instanlty
 console.log(
   canConstruct("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef", [
@@ -36,7 +36,7 @@ console.log(
     "eeee",
     "eeeeef",
   ])
-); // false
+); // true
 
 //          abcdef
 //    cdef(ab)     def(abc)
