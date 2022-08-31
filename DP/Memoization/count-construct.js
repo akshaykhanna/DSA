@@ -26,4 +26,4 @@ console.log(
     "eeee",
     "eeeee",
   ])
-); // false
+); // 0
