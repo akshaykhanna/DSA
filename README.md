@@ -1,5 +1,5 @@
 # Data Structures and Algorithms (DSA)
-Arsenal of commonly use DSA in JS, helpfull in solving MAANG & top tech interview problems.
+Most commonly used DSA for solving FAANG / MAANG / top tech interview problems.
 
 - ### Array
   - **InPlace**: Whenever trying to solve an array problem in-place, always consider the possibility of iterating backwards instead of forwards through the array. It can make it a lot easier.
