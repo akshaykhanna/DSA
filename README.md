@@ -135,6 +135,19 @@ Most commonly used DSA for solving FAANG / MAANG / top tech interview problems.
       return memo[i]
     ```
   - **Memoizing** a result means to store the result of a function call, usually in a hashmap or an array, so that when the same function call is made again, we can simply return the memoized result instead of recalculating the result.
+  - **Memoization Recipie**
+    - Recipie
+      - Make it work 
+        - Visualize the problems as tree
+        - Find the base case
+        - Implement tree using recursion
+        - Test it
+       - Make it efficent
+         - Add a memo object
+         - Add base case to return memo object
+         - Store return values in memo
+    - ##### Tip: Always try to implement brute force first (make it work ) then only memoize it (make it efficent)
+
   - #### When to use DP
     -  Problem will ask for the optimum value (maximum or minimum) of something
     -  Future "decisions" depend on earlier decisions
