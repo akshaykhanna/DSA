@@ -153,7 +153,7 @@
    -  Intial: Total no of vertex: n, stack, colorMap
    -  Loop: all vertices 
       - If not colored(vertex)
-        -  colorMap[vertex] = 0;
+        -  color[vertex] = 0;
         -  stack.push(vetex)
         -  Loop: stack.length
            - currVertex = stack.pop()
