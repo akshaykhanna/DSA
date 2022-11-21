@@ -147,6 +147,14 @@ Most commonly used DSA for solving FAANG / MAANG / top tech interview problems.
          - Add base case to return memo object
          - Store return values in memo
     - ##### Tip: Always try to implement brute force first (make it work ) then only memoize it (make it efficent)
+   - **Tabulation Recipie**
+      - Visualize problem as table
+      - Size the table as problem inputs
+      - Intialize table with default values
+      - Seed the trivial answer into the table
+      - Iterate thorugh the table
+      - Fill further (or current)  position based on current (or previous) postions
+      - Return the final result from last (or desired) index of table
 
   - #### When to use DP
     -  Problem will ask for the optimum value (maximum or minimum) of something
