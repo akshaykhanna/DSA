@@ -45,7 +45,7 @@ Most commonly used DSA for solving FAANG / MAANG / top tech interview problems.
 - ### Backtracking
   - Algo for finding all (or some) solutions to some computational problems which incrementally builds candidates to the solution and abandons a candidate ("backtracks") as soon as it determines that the candidate cannot lead to a valid solution.
   - **Pruning**: For backtracking to be efficient, we must **prune** dead or redundent branches of the search space whenever possible. 
-  - Template: 
+  - Template 1: 
   ```
     def backtrack(candidate):
         if find_solution(candidate):
@@ -62,6 +62,53 @@ Most commonly used DSA for solving FAANG / MAANG / top tech interview problems.
                 # backtrack
                 remove(next_candidate)
    ```
+   - Template 2 (a.k.a. IGS)
+      - isValidState(state)
+        - Validates whether the given state is the final solution
+      - getCandiates(state): 
+        - Find list of candidates which can be use to construct the next state based on problem constraint
+      - search()
+        - Calls isValidState() method to check if state is a valid solution
+        - If valid then make deep copy of it & return if required
+        - Then loop on get candidates (getCandiates())
+          - Add candidate to state & recursively call search() again
+          - Back to original state : do backtracking so as to find other solutions
+      - solve()
+        - Starts with empty solutions[] list & empty state
+        - Then search(solutions, state)
+        - Return solutions[]
+        - This function problem expects us to write
+    - Template 2 Code
+    ```
+        function is_valid_state(state) {
+            // check if it is a valid solution
+            return True;
+        }
+
+        function get_candidates(state) {
+            return [];
+        }
+
+        function search(state, solutions) {
+            if is_valid_state(state) {
+                solutions.append(state.copy());
+                // return 
+            }
+
+            for candidate in get_candidates(state) {
+                state.add(candidate);
+                search(state, solutions);
+                state.remove(candidate);
+            }
+        }
+
+        function solve() {
+              solutions = [];
+              state = new Set();
+              search(state, solutions);
+              return solutions;
+        }
+    ```
   - N-Queens: no. of distinct ways to place n queens on n*n board
     - [Problem](https://leetcode.com/problems/n-queens-ii/)
     - [Solution](https://github.com/akshaykhanna/DSA/blob/main/Backtracking_N-Queens.js) 
