@@ -26,6 +26,13 @@ Most commonly used DSA for solving FAANG / MAANG / top tech interview problems.
     A **minimum spanning tree** is a spanning tree with the minimum possible total edge weight in a “weighted undirected graph”.
     ##### LC Problem: [Min Cost to Connect All Points](https://leetcode.com/problems/min-cost-to-connect-all-points/)
     - [Kruskal’s algorithm](https://github.com/akshaykhanna/DSA/blob/main/KruskalAlgo.js)
+      - Create a minHeap of edges & their weights(costs)
+      - Keep on poping out edges from minHeap till  it has edges and count > 0 
+        - (where count = n-1 as MST only requires n-1 edges to connect all n vertices)
+        - If popped out edges are not connected then connect them using UnionFind DS
+        - Keep adding weights of newly connected edges
+        - count --
+        
     - [Prim's Algorithm](https://github.com/akshaykhanna/DSA/blob/main/PrimAlgo.js)
   - #### Single Source Shortest path
     - [Dijkstra’s algorithm](https://github.com/akshaykhanna/DSA/blob/main/DijkstraAlgo.js): Single source shortest path in a graph with non-negative weights ([LC Problem](https://leetcode.com/problems/network-delay-time/)).
