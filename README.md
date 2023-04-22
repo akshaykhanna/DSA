@@ -36,6 +36,17 @@ Most commonly used DSA for solving FAANG / MAANG / top tech interview problems.
     - [Prim's Algorithm](https://github.com/akshaykhanna/DSA/blob/main/PrimAlgo.js)
   - #### Single Source Shortest path
     - [Dijkstra’s algorithm](https://github.com/akshaykhanna/DSA/blob/main/DijkstraAlgo.js): Single source shortest path in a graph with non-negative weights ([LC Problem](https://leetcode.com/problems/network-delay-time/)).
+      - Create adjList if allready not there
+      - Create distances array for nodes with default value as Infinity
+      - Create minHeap with compareFunc on smaller distances
+      - Intialize k (start node) distance as 0 & add it to minHeap
+      - Loop till minHeap is not empty
+        - currVertex = minHeap.pop()
+        - Loop on adjVertices of currVertex
+          - if distance[adjVertice] > distance[currVertex] + time
+            -  distance[adjVertice] =  distance[currVertex] + time
+            -  minHeap.add(adjVertice)
+      -  Return output max(distance) == Infinity ? -1 : max(distance)
     - Bellman-Ford algorithm: Single source shortest path in a graph with with any weights, including negative weights
   - #### Topological Sort: Kahn's Algo
     - [LC Problem: Course Schedule](https://leetcode.com/problems/course-schedule-ii/)
