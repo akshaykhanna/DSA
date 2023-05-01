@@ -45,7 +45,7 @@ class UnionFind {
     }
   }
   connected(x, y) {
-    return this.find(x) === this.find(y);
+    return this.findPathCompression(x) === this.findPathCompression(y);
   }
 }
 const unionFind = new UnionFind(10);
